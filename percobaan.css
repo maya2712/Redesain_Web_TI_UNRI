@@ -1,0 +1,132 @@
+
+.banner{
+    background-image: url('ft1.jpg');
+    height: 45vh;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0,0, .6);
+}
+
+.heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.heading h1{
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+}
+/* garis bawah */
+.heading h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #676a67;
+}
+.heading iframe{
+    width: 400px;
+    height: 500px;
+}
+
+.heading p{
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 35px;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.heading img{
+    width: 400px;
+    height: 500px;
+}
+/* card */
+
+.card-fitur h5{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.card-fitur span{
+    color:#fff;
+    font-size: 14px;
+}
+.card-fitur h6{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+.card-fitur button{
+    background-color: #f0525f;
+    color: #fff;
+    border: none;
+    width: 110px;
+    height: 30px;
+
+}
+.card-fitur .overlay{
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+    transition: all ease-in-out .3s;
+}
+.card-fitur .overlay:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+}
+.carousel-inner-fitur {
+  padding: 1em;
+}
+
+@media (min-width: 768px) {
+  .carousel-item-fitur {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+  }
+  .carousel-inner-fitur {
+    display: flex;
+  }
+}
+.card-fitur .img-wrapper {
+    max-width: 100%;
+    height: 13em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-fitur img {
+    max-height: 100%;
+}
+@media (max-width: 767px) {
+  .card-fitur .img-wrapper {
+    height: 17em;
+  }
+}
+.btn:hover{
+  background-color: #f0525f;
+  color: #fff;
+}
+
+
+

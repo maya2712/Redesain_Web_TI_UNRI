@@ -1,0 +1,293 @@
+
+/********** Template CSS **********/
+:root {
+    --primary: #2B3467;
+    --secondary: #2B9BFF;
+    --light: #EFFDF5;
+    --dark: #2B3467;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+/*** About ***/
+.about-bg {
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+    background-image: -o-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+    background-size: 5px 5px;
+}
+
+/*** Testimonial ***/
+.testimonial-carousel .owl-item .testimonial-item,
+.testimonial-carousel .owl-item.center .testimonial-item * {
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item {
+    background: var(--primary) !important;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item * {
+    color: #FFFFFF !important;
+}
+
+.testimonial-carousel .owl-dots {
+    margin-top: 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    border: 5px solid var(--primary);
+    border-radius: 2px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+    background: var(--dark);
+    border-color: var(--primary);
+}
+
+
+
+/* FOOTER */
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    letter-spacing: 1px;
+}
+/*--------------restaurant--------*/
+.restaurant img {
+  width: 100%;
+  height: 100%;
+}
+
+.restaurant .right {
+  padding: 50px 50px 50px 100px;
+}
+
+.restaurant h2 {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.restaurant .text p {
+  margin-bottom: 50px;
+  line-height: 25px;
+}
+
+.accordionItem {
+  margin-top: 30px;
+}
+
+.accordionItem p {
+  font-size: 15px;
+  opacity: 0.8;
+  font-family: sans-serif;
+  line-height: 20px;
+}
+
+.accordionIHeading {
+  cursor: pointer;
+  width: 100%;
+  border-radius: 3px;
+  font-weight: 400;
+  font-size: 17px;
+  color: #C1B086;
+  margin-bottom: 20px;
+}
+
+.close .accordionItemContent {
+  height: 0px;
+  transition: height 1s ease-out;
+  transform: scaleY(0);
+  float: left;
+  display: block;
+  background-color: #fff;
+}
+
+.open .accordionItemContent {
+  padding: 30px;
+  background-color: #fff;
+  width: 100%;
+  margin: 0 0 10px 0;
+  display: block;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 0.4s ease;
+  box-sizing: border-box;
+  box-shadow: 0 13px 43px 0 rgb(37 46 89 / 10%);
+}
+
+/* services */
+
+.services{
+    background: var(--light-bg);
+}
+
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.services .box-container .box{
+    padding: 4rem;
+    text-align: center;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: 5rem;
+}
+
+.services .box-container .box:hover{
+    background: var(--hover);
+}
+
+.services .box-container .box img{
+    margin: 1rem 0;
+    height: 10rem;
+}
+
+.services .box-container .box h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: var(--black);
+}
+
+.services .box-container .box p{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    line-height: 2;
+}
+
+/* services section ends */
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.box{
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: 15px;
+    width: 350px;
+}
+
+.box::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    width: 100%;
+}
+
+.box-cyan::after{
+    background-color: rgb(69, 211, 211);
+}
+.box .btn:hover{
+    background-color: rgb(43, 52, 103);
+    color: #fff;
+}
+
+.box-red::after{
+    background-color: rgb(234, 83, 83);
+}
+
+
+.box-blue::after{
+    background-color: rgb(84, 158, 242);
+}
+
+.box-orange::after{
+    background-color: rgb(252, 175, 74);
+}
+
+.box-push{
+    transform: translateY(50%);
+}
+
+.box h2{
+    margin: 0;
+}
+
+.box:hover h5.box-cyan{
+    color: rgb(69, 211, 211);
+}
+
+.box:hover h5.box-red{
+    color: rgb(234, 83, 83);
+}
+
+.box:hover h5.box-blue{
+    color: rgb(84, 158, 242);
+}
+
+.box:hover h5.box-orange{
+    color: rgb(252, 175, 74);
+}
+
+.box p {
+    font-size: 14px;
+    margin: 15px 0 10px;
+}
+
+.box:hover p{
+    color: rgb(88, 87, 87);
+}
+
+.box img{
+    display: block;
+    margin-left: auto;
+}
+
+.box:hover img{
+    transform: scale(1.1);
+}
+
+@media (max-width: 775px){
+    .box-push{
+        transform: translateY(0);
+    }
+
+}
